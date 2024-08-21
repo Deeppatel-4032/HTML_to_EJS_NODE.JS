@@ -1,0 +1,631 @@
+<%-include("../head.ejs")%>
+  <body class="font-Poppins">
+    <!-- cursor -->
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+    <!-- loader -->
+    <!-- <div id="loading-area" class="loading-page-3">
+      <img src="../image/loading.gif" alt="loader" />
+    </div> -->
+    <!-- header -->
+    <header class="py-6 absolute w-full top-0 left-0 z-[99999]">
+      <div class="container mx-auto flex">
+        <div class="w-1/6">
+          <a href="./about.html">
+            <img src="../image/logo2.png" alt="" />
+          </a>
+        </div>
+        <div class="w-full flex justify-end items-center">
+          <ul class="flex">
+            <li class="px-3">
+              <a href="../index" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Home</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./services">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Services</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./about" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >About Us</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./blog-list" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Blogs</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./bloglist" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Blog List</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./contact" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Contact Us</span
+                >
+              </a>
+            </li>
+          </ul>
+          <ul class="pl-16 flex">
+            <li
+              class="w-11 h-11 mx-3 rounded-lg bg-white flex justify-center items-center"
+            >
+              <a href="#">
+                <i class="fi fi-rr-user-pen text-black text-xl"></i>
+              </a>
+            </li>
+            <li
+              class="w-11 h-11 rounded-lg flex bg-white justify-center items-center"
+            >
+              <a href="#">
+                <i class="fi fi-rr-shopping-bag text-black text-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Today's Special -->
+      <section>
+        <div
+          class="relative z-50 mx-auto pt-24 pb-20 after:content-[''] after:absolute after:-z-50 after:bg-backd-back after:opacity-60 after:rounded-3xl after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-sm"
+          style="background-image: url('../image/pic1\ \(1\).png'); width: 100%"
+        >
+          <div class="w-full flex justify-center mb-12 z-50 pt-20">
+            <div class="title text-center">
+              <h1 class="text-7xl font-Lobster text-white">Contact Us</h1>
+              <button
+                class="bg-prince-Prince px-8 py-3 rounded-lg border border-prince-Prince text-white mt-5 hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+              >
+                <a href="#">
+                  <span class="mr-2">Home</span>
+                  <span
+                    ><i class="fa-solid fa-angle-right pr-2 text-sm"></i
+                  ></span>
+                  <span>Contact Us</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card-section -->
+      <section class="pt-[100px]">
+        <div class="container mx-auto">
+          <div class="contact-bg w-4/5 mx-auto flex">
+            <div class="lg:w-1/4 sm:w-1/2 w-full px-[15px] mb-[60px] group">
+              <div class="flex justify-center">
+                <div
+                  class="icon-cell absolute translate-y-[-60px] flex justify-center items-center xl:w-[115px] xl:h-[115px] bg-white shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-full"
+                  style="z-index: 1"
+                >
+                  <i
+                    class="fa-solid fa-location-dot text-[50px] leading-[50px] text-og-orangee"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="icon-wrap relative z-[-1] mb-[30px] bg-white group-hover:bg-og-orangee transition-all duration-500 shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-[10px]"
+              >
+                <div class="icon-contan pt-[90px] px-[10px] pb-[30px]">
+                  <h5
+                    class="text-center text-[20px] font-semibold font-['poppins','sans-serif'] text-black mb-[10px] group-hover:text-white transition-all duration-500 ease"
+                  >
+                    Location
+                  </h5>
+                  <p
+                    class="text-center text-[16px] mb-4 font-['poppins','sans-serif'] text-[#666666] group-hover:text-white transition-all duration-500"
+                  >
+                    6952 Shelley St <br />
+                    Melbource
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/4 sm:w-1/2 w-full px-[15px] mb-[60px] group">
+              <div class="flex justify-center">
+                <div
+                  class="icon-cell absolute translate-y-[-60px] flex justify-center items-center xl:w-[115px] xl:h-[115px] bg-white shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-full"
+                  style="z-index: 1"
+                >
+                  <i
+                    class="fa-solid fa-phone text-[50px] leading-[50px] text-og-orangee"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="icon-wrap relative z-[-1] mb-[30px] bg-white group-hover:bg-og-orangee transition-all duration-500 shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-[10px]"
+              >
+                <div class="icon-contan pt-[90px] px-[10px] pb-[30px]">
+                  <h5
+                    class="text-center text-[20px] font-semibold font-['poppins','sans-serif'] text-black mb-[10px] group-hover:text-white transition-all duration-500"
+                  >
+                    Phone Number
+                  </h5>
+                  <p
+                    class="text-center text-[16px] mb-4 font-['poppins','sans-serif'] text-[#666666] group-hover:text-white transition-all duration-500"
+                  >
+                    +(800) 800-900-100 <br />+222 33 567 8665
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/4 sm:w-1/2 w-full px-[15px] mb-[60px] group">
+              <div class="flex justify-center">
+                <div
+                  class="icon-cell absolute translate-y-[-60px] flex justify-center items-center xl:w-[115px] xl:h-[115px] bg-white shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-full"
+                  style="z-index: 1"
+                >
+                  <i
+                    class="fa-solid fa-envelope text-[50px] leading-[50px] text-og-orangee"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="icon-wrap relative z-[-1] mb-[30px] bg-white group-hover:bg-og-orangee transition-all duration-500 shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-[10px]"
+              >
+                <div class="icon-contan pt-[90px] px-[10px] pb-[30px]">
+                  <h5
+                    class="text-center text-[20px] font-semibold font-['poppins','sans-serif'] text-black mb-[10px] group-hover:text-white transition-all duration-500"
+                  >
+                    Email Address
+                  </h5>
+                  <p
+                    class="text-center text-[16px] mb-4 font-['poppins','sans-serif'] text-[#666666] group-hover:text-white transition-all duration-500"
+                  >
+                    Info@Webmail.com <br />
+                    Info@Example.web.com
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/4 sm:w-1/2 w-full px-[15px] mb-[60px] group">
+              <div class="flex justify-center">
+                <div
+                  class="icon-cell absolute translate-y-[-60px] flex justify-center items-center xl:w-[115px] xl:h-[115px] bg-white shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-full"
+                  style="z-index: 1"
+                >
+                  <i
+                    class="fa-regular fa-clock text-[50px] leading-[50px] text-og-orangee"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="icon-wrap relative z-[-1] mb-[30px] bg-white group-hover:bg-og-orangee transition-all duration-500 shadow-[0px_15px_55px_rgba(34,34,34,0.3)] rounded-[10px]"
+              >
+                <div class="icon-contan pt-[90px] px-[10px] pb-[30px]">
+                  <h5
+                    class="text-center text-[20px] font-semibold font-['poppins','sans-serif'] text-black mb-[10px] group-hover:text-white transition-all duration-500"
+                  >
+                    Open & Closing
+                  </h5>
+                  <p
+                    class="text-center text-[16px] mb-4 font-['poppins','sans-serif'] text-[#666666] group-hover:text-white transition-all duration-500"
+                  >
+                    Mon - Fri: 09:00am <br />
+                    to 07.00pm
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reservation -->
+      <section class="pb-[100px]">
+        <div class="container mx-auto">
+          <div class="w-10/12 mx-auto bg-[#2222220a] rounded-[15px]">
+            <h2
+              class="text-center font-Lobster text-6xl bold mb-[50px] pt-[80px]"
+            >
+              Reservation
+            </h2>
+            <form action="" class="pb-8">
+              <div class="flex justify-between mx-[50px] px-[20px]">
+                <div class="w-6/12 px-[15px] mb-[30px]">
+                  <label
+                    for=""
+                    class="text-og-orangee block text-['poppins','sans-serif']"
+                    >Your Name</label
+                  >
+                  <div class="border-b-2 hover:border-black">
+                    <input
+                      type="text"
+                      name="nuser"
+                      class="h-[48px] outline-none bg-[#F6F6F6] text-black pd-[10px] placeholder:text-black placeholder:font-['poppins','sans-serif']"
+                      placeholder="Deep Patel"
+                    />
+                  </div>
+                </div>
+                <div class="w-6/12 px-[15px] mb-[30px]">
+                  <label
+                    for=""
+                    class="text-og-orangee block text-['poppins','sans-serif']"
+                    >Your Email</label
+                  >
+                  <div class="border-b-2 hover:border-black">
+                    <input
+                      type="text"
+                      name="nuser"
+                      class="h-[48px] outline-none bg-[#F6F6F6] text-black pd-[10px] placeholder:text-black placeholder:font-['poppins','sans-serif']"
+                      placeholder="info@example.com"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between mx-[50px] px-[20px]">
+                <div class="w-6/12 px-[15px] mb-[30px]">
+                  <label
+                    for=""
+                    class="text-og-orangee block text-['poppins','sans-serif']"
+                    >Your Number</label
+                  >
+                  <div class="border-b-2 hover:border-black">
+                    <input
+                      type="tel"
+                      name="nuser"
+                      class="h-[48px] outline-none bg-[#F6F6F6] text-black pd-[10px] placeholder:text-black placeholder:font-['poppins','sans-serif']"
+                      placeholder="7383884401"
+                    />
+                  </div>
+                </div>
+                <div class="w-6/12 px-[15px] mb-[30px]">
+                  <label
+                    for=""
+                    class="text-og-orangee block text-['poppins','sans-serif']"
+                    >Members</label
+                  >
+                  <div class="border-b-2 hover:border-black">
+                    <input
+                      type="text"
+                      name="nuser"
+                      class="h-[48px] outline-none bg-[#F6F6F6] text-black pd-[10px] placeholder:text-black placeholder:font-['poppins','sans-serif']"
+                      placeholder="1 Person"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex mx-[50px] px-[20px]">
+                <div class="w-full px-[15px] mb-[30px]">
+                  <label
+                    for=""
+                    class="text-og-orangee block text-['poppins','sans-serif']"
+                    >Message</label
+                  >
+                  <div class="border-b-2 hover:border-black">
+                    <textarea
+                      name="msg"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      class="h-[100px] bg-[#F6F6F6] outline-none w-full text-black pd-[10px] placeholder:text-black placeholder:font-['poppins','sans-serif']"
+                      placeholder="Hi, do you Have a moment to talk About !"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="w-3/12 mx-[50px] px-5">
+              <div
+                class="robot py-3 px-3 flex items-center justify-between shadow-md"
+              >
+                <div class="robot-left flex items-center">
+                  <input type="checkbox" class="w-7 h-7 mr-2" />
+                  <span class="text-sm">I'm not a robot</span>
+                </div>
+                <div class="robot-right">
+                  <img
+                    src="../image/icon/logo_48.png"
+                    alt="robot"
+                    width="32px"
+                    height="32px"
+                    class="mx-auto"
+                  />
+                  <span class="block text-[10px] p-0 m-0">reCAPTCHA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-10">
+              <a href="javascript:void(0).;">
+                <span
+                  class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent mb-10 mt-5 hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                  >Book A Table</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="-z-50">
+      <div
+        class="bg-bgfoot pt-[85px] w-full relative overflow-hidden z-[99999]"
+      >
+        <div class="foot-img">
+          <img
+            src="../image/foot.png"
+            alt=""
+            class="absolute -bottom-20 z-10 -left-6"
+          />
+          <img src="../image/pic6 (1).png" alt="" class="absolute right-0" />
+        </div>
+        <div
+          class="footer-contant pb-[45px] flex mx-auto px-[50px] w-full justify-evenly z-50"
+        >
+          <div class="w-2/12 px-5">
+            <div class="contact">
+              <div class="title mb-7">
+                <h2
+                  class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+                >
+                  CONTACT
+                </h2>
+              </div>
+              <ul>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-location-dot text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div class="footer-c-content">
+                      <p
+                        class="text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                      >
+                        1247/Plot No. 39, 15th Phase, Colony, Kkatpally,
+                        Hyderabad
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-phone text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div
+                      class="footer-c-content text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                    >
+                      <h5>+91 987-654-3210</h5>
+                      <h5>+91 123-456-7890</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-envelope text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div
+                      class="footer-c-content text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                    >
+                      <h5>info@example.com</h5>
+                      <h5>info@example.com</h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                OUR LINKS
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Pages</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>About us</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                OUR SERVICES
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Strategy & Research</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Fast Delivery</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Seat Reservation</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Pickup In Store</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Our Menu</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                HELP CENTER
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>FAQ</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Shop</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Category Filter</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Testimonials</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-bgfoot foot-bottom mx-auto px-44">
+          <div
+            class="foot-content py-5 flex"
+            style="border-top: 0.5px solid #999999"
+          >
+            <div class="w-6/12">
+              <p class="text-[#999999]">Copyright 2023 All rights reserved.</p>
+            </div>
+            <div class="w-6/12 flex justify-end">
+              <p class="text-[#999999]">
+                Crafted With<i class="fa-solid fa-heart px-3"></i>by
+                <span class="text-prince-Prince">DexignZone</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../jquery/script.js"></script>
+    <!-- loder -->
+    <script>
+      $(window).on("load", function () {
+        $("#loading-area").delay(2000).fadeOut("fast");
+      });
+    </script>
+  </body>
+</html>

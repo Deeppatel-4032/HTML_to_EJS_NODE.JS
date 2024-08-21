@@ -1,0 +1,2143 @@
+<%-include("head.ejs")%>
+  <body class="font-Poppins">
+    <!-- cursor -->
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+    <!-- loader -->
+    <div class="loader">
+      <div class="text-6xl load">
+        <div>S</div>
+        <div>W</div>
+        <div>I</div>
+        <div>G</div>
+        <div>O</div>
+      </div>
+    </div>
+    <!-- header -->  
+    <header class="py-6">
+      <div class="container mx-auto flex">
+        <div class="w-1/6">
+          <a href="index">
+            <img src="image/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="w-full flex justify-end items-center">
+          <ul class="flex">
+            <li class="px-3">
+              <a href="index" target="_blank">
+                <span
+                  class="text-slate-800 hover:text-prince-Prince transition-all duration-500"
+                  >Home</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="/services" target="_blank">
+                <span
+                  class="text-slate-800 hover:text-prince-Prince transition-all duration-500"
+                  >Services</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./pages/about" target="_blank">
+                <span
+                  class="text-slate-800 hover:text-prince-Prince transition-all duration-500"
+                  >About Us</span
+                >
+              </a>
+            </li>
+            <li class="px-3 relative">
+              <a href="./pages/blog-list" target="_blank" class="">
+                <span
+                  class="text-slate-800 hover:text-prince-Prince group group-hover:opacity-100 transition-all duration-500"
+                  >Blogs</span
+                >
+              </a>
+              <div
+                class="dropdown top-[180%] opacity-0 group-hover:opacity-100 rounded-lg absolute h-auto w-48 bg-white border z-50"
+              >
+                <ul class="p-4">
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="hover:text-prince-Prince transition-all duration-500"
+                    >
+                      <span>Blog Details</span>
+                    </a>
+                  </li>
+                  <li
+                    class="mb-2"
+                    class="hover:text-prince-Prince transition-all duration-500"
+                  >
+                    <a href="#">
+                      <span>Blog Grid 2</span>
+                    </a>
+                  </li>
+                  <li
+                    class="mb-2"
+                    class="hover:text-prince-Prince transition-all duration-500"
+                  >
+                    <a href="#">
+                      <span>Blog Grid 3</span>
+                    </a>
+                  </li>
+                  <li
+                    class="mb-2"
+                    class="hover:text-prince-Prince transition-all duration-500"
+                  >
+                    <a href="#">
+                      <span>Blog Search Left</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="px-3">
+              <a href="./pages/bloglist" target="_blank">
+                <span
+                  class="text-slate-800 hover:text-prince-Prince transition-all duration-500"
+                  >Blog list</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./pages/contact" target="_blank">
+                <span
+                  class="text-slate-800 hover:text-prince-Prince transition-all duration-500"
+                  >Contact Us</span
+                >
+              </a>
+            </li>
+          </ul>
+          <div class="search-bar relative pl-6">
+            <input
+              type="text"
+              class="border-2 px-5 py-2 border-orange-400 rounded-full text-slate-800 outline-none placeholder:text-slate-600"
+              placeholder="Search"
+            />
+            <div class="search-btn absolute top-0 right-0">
+              <button class="w-11 h-11 bg-orange-400 rounded-full">
+                <a href="#">
+                  <i
+                    class="fa-solid fa-magnifying-glass text-lg text-white"
+                  ></i>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="bar ml-8">
+            <a href="#">
+              <img src="image/menu.png" alt="" width="25px" height="25px" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- banner -->
+      <section>
+        <div class="banner">
+          <div class="container ms-auto relative">
+            <div class="swiper mySwiper" style="height: 100vh">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="w-full h-lvh rounded-l-3xl overflow-hidden bg-center bg-cover flex items-center relative -z-50 after:content-[''] after:absolute after:-z-50 after:bg-black after:opacity-60 after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-sm"
+                    style="background-image: url('./image/bg2.jpg')">
+                    <div class="container flex items-center mx-20">
+                      <div class="w-7/12 banner-left">
+                        <h6 class="text-xl text-prince-Prince font-medium">
+                          Exploring the Delicious World
+                        </h6>
+                        <h1 class="text-white text-7xl font-Lobster mb-4">
+                          Food that Makes You Happy And Healthy
+                        </h1>
+                        <p class="text-sil text-lg text-white opacity-80 pb-6">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </p>
+                        <div class="banner-btn mt-4 mb-20 z-50">
+                          <button>
+                            <a
+                              href="./pages/blog.html"
+                              class="px-8 py-4 mr-8 border border-orange-400 rounded-lg text-white font-medium bg-prince-Prince"
+                            >
+                              <span>Book a Table</span>
+                            </a>
+                          </button>
+
+                          <button>
+                            <a
+                              href="./pages/about.html"
+                              class="px-8 py-4 mr-8 border border-orange-400 rounded-lg text-prince-Prince font-medium"
+                            >
+                              <span>View More</span>
+                            </a>
+                          </button>
+                        </div>
+                        <div
+                          class="w-7/12 banner-menu border border-dashed rounded-xl"
+                        >
+                          <div class="menu-top px-6 py-4 flex justify-between">
+                            <div
+                              class="menu-top-left text-white font-semibold text-xl"
+                            >
+                              <h4>Veg Biryani</h4>
+                            </div>
+                            <div class="menu-top-right">
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="menu-bottom px-6 py-4 border rounded-b-xl border-dashed flex justify-between"
+                          >
+                            <div class="menu-bottom-left text-white">
+                              <div class="menu-bottom-img flex mb-3">
+                                <img
+                                  src="image/pic1.jpg"
+                                  alt=""
+                                  style="width: 50px; height: 50px"
+                                  class="rounded-full"
+                                />
+                                <div class="menu-bt-content ml-2">
+                                  <h6 class="text-lg font-semibold mb-1">
+                                    Kamy Klay
+                                  </h6>
+                                  <p class="text-sm text-white opacity-80">
+                                    Master Chief
+                                  </p>
+                                </div>
+                              </div>
+                              <p class="text-base text-white opacity-80">
+                                Lorem ipsum dolor shit amet..
+                              </p>
+                            </div>
+                            <div class="menu-bottom-right">
+                              <h5
+                                class="text-prince-Prince font-semibold mb-2 text-xl"
+                              >
+                                $10.00
+                              </h5>
+                              <div
+                                class="shopping-btn rounded bg-prince-Prince flex justify-center items-center"
+                                style="width: 40px; height: 40px"
+                              >
+                                <a href="#" class="p-2"
+                                  ><img
+                                    src="image/shopping-cart.png"
+                                    alt=""
+                                    width="22"
+                                    height="22"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-5/12 banner-right">
+                        <img
+                          src="image/pic2 (1).png"
+                          alt=""
+                          width="100%"
+                          height="100%"
+                        />
+                        <img
+                          src="image/pic4.png"
+                          alt=""
+                          class="absolute top-0"
+                        />
+                        <div
+                          class="absolute rounded-full -top-96 -right-96 -z-10"
+                          style="
+                            border: 100px solid orange;
+                            width: 60vw;
+                            height: 60vw;
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full h-lvh rounded-l-3xl flex items-center relative -z-50 after:content-[''] after:absolute after:-z-50 after:bg-black after:opacity-60 after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-sm"
+                    style="
+                      background-image: url('./image/bg3.jpg');
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      overflow: hidden;
+                    "
+                  >
+                    <div class="container flex items-center mx-20">
+                      <div class="w-7/12 banner-left">
+                        <h6 class="text-xl text-prince-Prince font-medium">
+                          Exploring the Delicious World
+                        </h6>
+                        <h1 class="text-white text-7xl font-Lobster mb-4">
+                          Food that Makes You Happy And Healthy
+                        </h1>
+                        <p class="text-sil text-lg text-white opacity-80 pb-6">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </p>
+                        <div class="banner-btn mt-4 mb-20 z-50">
+                          <button>
+                            <a
+                              href="./pages/blog.html"
+                              class="px-8 py-4 mr-8 border border-orange-400 rounded-lg text-white font-medium bg-prince-Prince"
+                            >
+                              <span>Book a Table</span>
+                            </a>
+                          </button>
+
+                          <button>
+                            <a
+                              href="./pages/about.html"
+                              class="px-8 py-4 mr-8 border border-orange-400 rounded-lg text-prince-Prince font-medium"
+                            >
+                              <span>View More</span>
+                            </a>
+                          </button>
+                        </div>
+                        <div
+                          class="w-7/12 banner-menu border border-dashed rounded-xl"
+                        >
+                          <div class="menu-top px-6 py-4 flex justify-between">
+                            <div
+                              class="menu-top-left text-white font-semibold text-xl"
+                            >
+                              <h4>Veg Biryani</h4>
+                            </div>
+                            <div class="menu-top-right">
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="menu-bottom px-6 py-4 border rounded-b-xl border-dashed flex justify-between"
+                          >
+                            <div class="menu-bottom-left text-white">
+                              <div class="menu-bottom-img flex mb-3">
+                                <img
+                                  src="image/pic1.jpg"
+                                  alt=""
+                                  style="width: 50px; height: 50px"
+                                  class="rounded-full"
+                                />
+                                <div class="menu-bt-content ml-2">
+                                  <h6 class="text-lg font-semibold mb-1">
+                                    Kamy Klay
+                                  </h6>
+                                  <p class="text-sm text-white opacity-80">
+                                    Master Chief
+                                  </p>
+                                </div>
+                              </div>
+                              <p class="text-base text-white opacity-80">
+                                Lorem ipsum dolor shit amet..
+                              </p>
+                            </div>
+                            <div class="menu-bottom-right">
+                              <h5
+                                class="text-prince-Prince font-semibold mb-2 text-xl"
+                              >
+                                $10.00
+                              </h5>
+                              <div
+                                class="shopping-btn rounded bg-prince-Prince flex justify-center items-center"
+                                style="width: 40px; height: 40px"
+                              >
+                                <a href="#" class="p-2"
+                                  ><img
+                                    src="image/shopping-cart.png"
+                                    alt=""
+                                    width="22"
+                                    height="22"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-5/12 banner-right">
+                        <img src="image/pic3.png" alt="" />
+                        <img
+                          src="image/pic4.png"
+                          alt=""
+                          class="absolute top-0"
+                        />
+                        <div
+                          class="absolute rounded-full -top-96 -right-96 -z-10"
+                          style="
+                            border: 100px solid orange;
+                            width: 60vw;
+                            height: 60vw;
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="w-full overflow-hidden bg-center bg-cover h-lvh rounded-l-3xl flex items-center relative -z-50 after:content-[''] after:absolute after:-z-50 after:bg-black after:opacity-60 after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-sm"
+                    style="background-image: url('./image/bg1.jpg')"
+                  >
+                    <div class="container flex items-center mx-20">
+                      <div class="w-7/12 banner-left">
+                        <h6 class="text-xl text-prince-Prince font-medium">
+                          Exploring the Delicious World
+                        </h6>
+                        <h1 class="text-white text-7xl font-Lobster mb-4">
+                          Food that Makes You Happy And Healthy
+                        </h1>
+                        <p class="text-sil text-lg text-white opacity-80 pb-6">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </p>
+                        <div class="banner-btn mt-4 mb-20 z-50">
+                          <button>
+                            <a
+                              href="./pages/blog.html"
+                              class="px-8 py-4 mr-8 border border-orange-400 rounded-lg text-white font-medium bg-prince-Prince"
+                            >
+                              <span>Book a Table</span>
+                            </a>
+                          </button>
+
+                          <button>
+                            <a
+                              href="./pages/about.html"
+                              class="px-8 py-4 mr-8 border border-orange-400 rounded-lg text-prince-Prince font-medium"
+                            >
+                              <span>View More</span>
+                            </a>
+                          </button>
+                        </div>
+                        <div
+                          class="w-7/12 banner-menu border border-dashed rounded-xl"
+                        >
+                          <div class="menu-top px-6 py-4 flex justify-between">
+                            <div
+                              class="menu-top-left text-white font-semibold text-xl"
+                            >
+                              <h4>Veg Biryani</h4>
+                            </div>
+                            <div class="menu-top-right">
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                              <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="menu-bottom px-6 py-4 border rounded-b-xl border-dashed flex justify-between"
+                          >
+                            <div class="menu-bottom-left text-white">
+                              <div class="menu-bottom-img flex mb-3">
+                                <img
+                                  src="image/pic1.jpg"
+                                  alt=""
+                                  style="width: 50px; height: 50px"
+                                  class="rounded-full"
+                                />
+                                <div class="menu-bt-content ml-2">
+                                  <h6 class="text-lg font-semibold mb-1">
+                                    Kamy Klay
+                                  </h6>
+                                  <p class="text-sm text-white opacity-80">
+                                    Master Chief
+                                  </p>
+                                </div>
+                              </div>
+                              <p class="text-base text-white opacity-80">
+                                Lorem ipsum dolor shit amet..
+                              </p>
+                            </div>
+                            <div class="menu-bottom-right">
+                              <h5
+                                class="text-prince-Prince font-semibold mb-2 text-xl"
+                              >
+                                $10.00
+                              </h5>
+                              <div
+                                class="shopping-btn rounded bg-prince-Prince flex justify-center items-center"
+                                style="width: 40px; height: 40px"
+                              >
+                                <a href="#" class="p-2"
+                                  ><img
+                                    src="image/shopping-cart.png"
+                                    alt=""
+                                    width="22"
+                                    height="22"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-5/12 banner-right">
+                        <img src="image/pic1 (2).png" alt="" />
+                        <img
+                          src="image/pic4.png"
+                          alt=""
+                          class="absolute top-0"
+                        />
+                        <div
+                          class="absolute rounded-full -top-96 -right-96 -z-10"
+                          style="
+                            border: 100px solid orange;
+                            width: 60vw;
+                            height: 60vw;
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination left-[-80px] font-Lobster text-prince-Prince"
+            ></div>
+            <div
+              class="swiper-button-next left-[-83px] top-[69%] rotate-90 font-Lobster text-prince-Prince"
+            ></div>
+            <div
+              class="swiper-button-prev left-[-83px] top-[47%] rotate-90 font-Lobster text-prince-Prince"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Icon Wrapper-2 -->
+      <section class="pt-[100px] pb-[70px]">
+        <div class="container flex mx-auto">
+          <div class="w-4/12" data-aos="zoom-in">
+            <div class="b-card flex items-center border-r border-dashed px-6">
+              <div
+                class="b-icon w-24 mr-5 h-24 rounded-full bg-ogo-ogo flex items-center justify-center"
+              >
+                <img src="image/offer.png" alt="" width="45px" height="45px" />
+              </div>
+              <div class="b-content">
+                <h4 class="text-xl font-medium">Discount Voucher</h4>
+                <p class="text-base text-gray-500">
+                  lorem ipsum dolor shit amet lorem ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-4/12" data-aos="zoom-in-up">
+            <div class="b-card flex items-center border-r border-dashed px-6">
+              <div
+                class="b-icon w-24 mr-5 h-24 rounded-full bg-ogo-ogo flex items-center justify-center"
+              >
+                <img src="image/burger.png" alt="" width="45px" height="45px" />
+              </div>
+              <div class="b-content">
+                <h4 class="text-xl font-medium">Fresh Healthy Food</h4>
+                <p class="text-base text-gray-500">
+                  lorem ipsum dolor shit amet lorem ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-4/12" data-aos="zoom-in">
+            <div class="b-card flex items-center px-6">
+              <div
+                class="b-icon w-24 mr-5 h-24 rounded-full bg-ogo-ogo flex items-center justify-center"
+              >
+                <img
+                  src="image/room-service.png"
+                  alt=""
+                  width="45px"
+                  height="45px"
+                />
+              </div>
+              <div class="b-content">
+                <h4 class="text-xl font-medium">Fast Serve On Table</h4>
+                <p class="text-base text-gray-500">
+                  lorem ipsum dolor shit amet lorem ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Browse Our Menu -->
+      <section>
+        <div class="b-menu pb-[100px]">
+          <div class="container mx-auto flex items-center mb-12">
+            <div class="w-6/12">
+              <div class="title">
+                <h1 class="text-6xl font-Lobster">Browse Our Menu</h1>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto">
+            <div class="swiper card_c h-40 px-20">
+              <div class="swiper-wrapper h-auto">
+                <div class="swiper-slide" data-aos="fade-up-right">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                      "
+                    >
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic2.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Hot Rice</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$15.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up-left">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic5.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Panner</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$20.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up-right">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                      "
+                    >
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic1.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Burger</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$10.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up-left">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                      "
+                    >
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic6.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Soya Rice</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$17.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up-right">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                      "
+                    >
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic2.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Hot Rice</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$15.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up-left">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                      "
+                    >
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic5.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Panner</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$20.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up-left">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                      "
+                    >
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic1.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Burger</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$10.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-up-right">
+                  <div class="w-10/12 mr-5">
+                    <div
+                      class="p-4 our-menu-card relative rounded-xl"
+                      style="
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                      "
+                    >
+                      <div class="menu-card-top flex mb-3">
+                        <img
+                          src="image/pic6.png"
+                          alt=""
+                          width="60px"
+                          height="60px"
+                          class="mr-5"
+                        />
+                        <div class="menu-card-top-right">
+                          <h6 class="text-lg font-semibold">Soya Rice</h6>
+                          <p class="text-sm text-gray-500">
+                            Delicious and Spicy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="menu-card-fotter">
+                        <span class="block text-xs text-gray-600"
+                          >Regular Price</span
+                        >
+                        <span class="block text-lg text-prince-Prince font-bold"
+                          >$17.00</span
+                        >
+                        <a
+                          href="#"
+                          class="w-12 h-12 bg-prince-Prince flex justify-center items-center absolute bottom-0 right-0 rounded-br-lg rounded-tl-lg"
+                          ><i class="fa-solid fa-plus text-white text-xl"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-button-next h-12 w-12 rounded-full bg-prince-Prince text-white font-bold"
+              ></div>
+              <div
+                class="swiper-button-prev h-12 w-12 rounded-full bg-prince-Prince text-white font-bold"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Today's Special -->
+      <section>
+        <div
+          class="container relative z-50 mx-auto rounded-3xl pt-24 pb-20 after:content-[''] after:absolute after:-z-50 after:bg-black after:opacity-60 after:rounded-3xl after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-sm"
+          style="background-image: url('./image/pic1\ \(1\).png'); width: 100%"
+        >
+          <div class="w-full flex justify-center mb-12 z-50">
+            <div class="title">
+              <h1 class="text-6xl font-Lobster text-white">Today's Special</h1>
+            </div>
+          </div>
+          <div class="special-card flex mx-auto justify-evenly">
+            <div class="w-2/12 p-4 bg-white rounded-xl" data-aos="zoom-in-left">
+              <div class="s-card">
+                <div class="sp-content mb-4">
+                  <div
+                    class="grams mb-1 text-slate-500 flex justify-between opacity-85"
+                  >
+                    <span class="text-xs font">Pizza</span>
+                    <span class="text-xs font">756g</span>
+                  </div>
+                  <div class="s-price flex justify-between">
+                    <h6 class="text-lg font-medium">Pepperoni</h6>
+                    <h6 class="text-lg font-semibold text-prince-Prince">
+                      $15.00
+                    </h6>
+                  </div>
+                </div>
+                <div
+                  class="sp-img overflow-hidden before:w-full before:h-full before:absolute before:bg-black before:opacity-0 before:hover:opacity-50 before:transition-all before:duration-500 rounded-xl relative after:transition-all after:duration-500 after:-translate-y-2/4 after:-translate-x-2/4 after:rounded-lg after:content-['+'] after:text-2xl after:opacity-0 after:hover:opacity-100 after:text-white after:flex after:justify-center after:items-center after:absolute after:top-2/4 after:left-2/4 after:w-11 after:h-11 after:bg-prince-Prince"
+                >
+                  <img src="image/pic1 (1).jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-2/12 p-4 bg-white rounded-xl"
+              data-aos="zoom-in-right"
+            >
+              <div class="s-card">
+                <div class="sp-content mb-4">
+                  <div
+                    class="grams mb-1 text-slate-500 flex justify-between opacity-85"
+                  >
+                    <span class="text-xs font">Pancake</span>
+                    <span class="text-xs font">756g</span>
+                  </div>
+                  <div class="s-price flex justify-between">
+                    <h6 class="text-lg font-medium">Pancake stack</h6>
+                    <h6 class="text-lg font-semibold text-prince-Prince">
+                      $18.00
+                    </h6>
+                  </div>
+                </div>
+                <div
+                  class="sp-img overflow-hidden before:w-full before:h-full before:absolute before:bg-black before:opacity-0 before:hover:opacity-50 before:transition-all before:duration-500 rounded-xl relative after:transition-all after:duration-500 after:-translate-y-2/4 after:-translate-x-2/4 after:rounded-lg after:content-['+'] after:text-2xl after:opacity-0 after:hover:opacity-100 after:text-white after:flex after:justify-center after:items-center after:absolute after:top-2/4 after:left-2/4 after:w-11 after:h-11 after:bg-prince-Prince"
+                >
+                  <img src="image/pic2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="w-2/12 p-4 bg-white rounded-xl" data-aos="zoom-in-left">
+              <div class="s-card">
+                <div class="sp-content mb-4">
+                  <div
+                    class="grams mb-1 text-slate-500 flex justify-between opacity-85"
+                  >
+                    <span class="text-xs font">Salad</span>
+                    <span class="text-xs font">756g</span>
+                  </div>
+                  <div class="s-price flex justify-between">
+                    <h6 class="text-lg font-medium">Halumini</h6>
+                    <h6 class="text-lg font-semibold text-prince-Prince">
+                      $15.00
+                    </h6>
+                  </div>
+                </div>
+                <div
+                  class="sp-img overflow-hidden before:w-full before:h-full before:absolute before:bg-black before:opacity-0 before:hover:opacity-50 before:transition-all before:duration-500 rounded-xl relative after:transition-all after:duration-500 after:-translate-y-2/4 after:-translate-x-2/4 after:rounded-lg after:content-['+'] after:text-2xl after:opacity-0 after:hover:opacity-100 after:text-white after:flex after:justify-center after:items-center after:absolute after:top-2/4 after:left-2/4 after:w-11 after:h-11 after:bg-prince-Prince"
+                >
+                  <img src="image/pic3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-2/12 p-4 bg-white rounded-lg"
+              data-aos="zoom-in-right"
+            >
+              <div class="s-card">
+                <div class="sp-content mb-4">
+                  <div
+                    class="grams mb-1 text-slate-500 flex justify-between opacity-85"
+                  >
+                    <span class="text-xs font">Egg</span>
+                    <span class="text-xs font">756g</span>
+                  </div>
+                  <div class="s-price flex justify-between">
+                    <h6 class="text-lg font-medium">Eggs</h6>
+                    <h6 class="text-lg font-semibold text-prince-Prince">
+                      $50.00
+                    </h6>
+                  </div>
+                </div>
+                <div
+                  class="sp-img overflow-hidden before:w-full before:h-full before:absolute before:bg-black before:opacity-0 before:hover:opacity-50 before:transition-all before:duration-500 rounded-xl relative after:transition-all after:duration-500 after:-translate-y-2/4 after:-translate-x-2/4 after:rounded-lg after:content-['+'] after:text-2xl after:opacity-0 after:hover:opacity-100 after:text-white after:flex after:justify-center after:items-center after:absolute after:top-2/4 after:left-2/4 after:w-11 after:h-11 after:bg-prince-Prince"
+                >
+                  <img src="image/pic4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Menu -->
+      <section class="pt-[100px] pb-[70px]">
+        <div class="w-full flex justify-center">
+          <span class="text-6xl bold font-Lobster">Our Menu</span>
+        </div>
+        <div class="container mx-auto">
+          <div class="manu-icons text-center">
+            <ul class="flex justify-center mt-10 pt-5">
+              <li class="px-8" data-aos="zoom-out-down">
+                <a href="javascript:void(0).;" class="all">
+                  <img
+                    src="./image/icon/fast-food.png"
+                    alt="fast-food"
+                    class="mb-2.5"
+                  />
+                  <span class="text-og-orangee text-base font-medium">All</span>
+                </a>
+              </li>
+              <li class="px-8" data-aos="zoom-out-up">
+                <a href="javascript:void(0).;" class="drink">
+                  <img
+                    src="./image/icon/cocktail.png"
+                    alt="cocktail"
+                    class="mb-2.5 mx-auto"
+                  />
+                  <span class="text-base font-medium">COLD DRINK</span>
+                </a>
+              </li>
+              <li class="px-8" data-aos="zoom-out-down">
+                <a href="javascript:void(0).;" class="pizza">
+                  <img
+                    src="./image/icon/pizza-slice.png"
+                    alt="pizza-slice"
+                    class="mb-2.5 mx-auto"
+                  />
+                  <span class="text-base font-medium">PIZZA</span>
+                </a>
+              </li>
+              <li class="px-8" data-aos="zoom-out-up">
+                <a href="javascript:void(0).;" class="salad">
+                  <img
+                    src="./image/icon/salad.png"
+                    alt="salad.png"
+                    class="mb-2.5 mx-auto"
+                  />
+                  <span class="text-base font-medium">SALAD</span>
+                </a>
+              </li>
+              <li class="px-8" data-aos="zoom-out-down">
+                <a href="javascript:void(0).;" class="sweets">
+                  <img
+                    src="./image/icon/cupcake.png"
+                    alt="cupcake"
+                    class="mb-2.5 mx-auto"
+                  />
+                  <span class="text-base font-medium">SWEETS</span>
+                </a>
+              </li>
+              <li class="px-8" data-aos="zoom-out-up">
+                <a href="javascript:void(0).;" class="spicy">
+                  <img
+                    src="./image/icon/chili-pepper.png"
+                    alt="chili-pepper"
+                    class="mb-2.5 mx-auto"
+                  />
+                  <span class="text-base font-medium">SPICY</span>
+                </a>
+              </li>
+              <li class="px-8" data-aos="zoom-out-down">
+                <a href="javascript:void(0).;" class="burger">
+                  <img
+                    src="./image/icon/hamburger.png"
+                    alt="hamburger"
+                    class="mb-2.5 mx-auto"
+                  />
+                  <span class="text-base font-medium">BURGER</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="manu-contant">
+            <ul class="mt-5">
+              <li class="flex px-[15px] justify-center pizzas salads spicys">
+                <div
+                  data-aos="fade-right"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="image/bg-img/pic1.png" alt="pic1" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      Pulled Chicken SandWich
+                    </h5>
+                    <span class="mx-2">.........................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$30</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+                <!-- right-side-menu -->
+                <div
+                  data-aos="fade-left"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="image/bg-img/pic2.png" alt="pic2" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      BBQ Chicken Sandwich
+                    </h5>
+                    <span class="mx-2">.........................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$30</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="flex px-[15px] justify-center pizzas sweetss">
+                <div
+                  data-aos="fade-right"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="image/bg-img/pic3.png" alt="pic3" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      Canada Dry Ginger Ale
+                    </h5>
+                    <span class="mx-2">.........................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$60</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+                <!-- right-side-menu -->
+                <div
+                  data-aos="fade-left"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="image/bg-img/pic4.png" alt="pic4" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      Pulled Chicken SandWich
+                    </h5>
+                    <span class="mx-2">.........................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$20</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="flex px-[15px] justify-center drinks sweetss">
+                <div
+                  data-aos="fade-right"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="./image/bg-img/pic5.png" alt="pic5" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      Martinelli’s Apple Juice
+                    </h5>
+                    <span class="mx-2">.........................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$80</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+                <!-- right-side-menu -->
+                <div
+                  data-aos="fade-left"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="./image/bg-img/pic6.png" alt="pic6" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      Chicken Honey Plate
+                    </h5>
+                    <span class="mx-2">..................................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$80</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="flex px-[15px] justify-center drinks salads burgers">
+                <div
+                  data-aos="fade-right"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="./image/bg-img/pic7.png" alt="pic7" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      Mango Mania Smoothie
+                    </h5>
+                    <span class="mx-2">.........................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$30</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+                <!-- right-side-menu -->
+                <div
+                  data-aos="fade-left"
+                  class="manu-items hover:shadow-lg duration-500 transition-all rounded-xl w-5/12 flex items-center justify-center p-5"
+                >
+                  <img src="./image/bg-img/pic8.png" alt="pic1" class="w-20" />
+                  <div class="ms-2">
+                    <h5
+                      class="hover:text-og-orangee text-black text-lg font-semibold inline-block"
+                    >
+                      Jamaican Jerk Sandwich
+                    </h5>
+                    <span class="mx-2">.........................</span>
+                    <span class="text-og-orangee text-xl font-semibold"
+                      >$80</span
+                    >
+                    <p class="text-fs15 font-normal text-gray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      <br />
+                      typesetting industry.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Meet The Chef's -->
+      <section>
+        <div
+          class="container bg-amber-100 pt-20 pb-24 w-4/5 mx-auto rounded-2xl"
+          style="background-image: url('./image/pic10.png')"
+        >
+          <div class="center-contan flex justify-center">
+            <span class="text-6xl bold font-Lobster mb-9">Meet The Chef's</span>
+          </div>
+          <div class="swiper cardc px-20">
+            <div class="swiper-wrapper px-3">
+              <div class="swiper-slide" data-aos="fade-up">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic1.jpg"
+                    alt="pic1"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">Sarah Albert</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-down">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic4.jpg"
+                    alt="pic1"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">Sarah Albert</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic3.jpg"
+                    alt="pic3"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">Jemy carline</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-down">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic2.jpg"
+                    alt="pic2"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">John Doe</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic1.jpg"
+                    alt="pic1"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">Sarah Albert</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-down">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic4.jpg"
+                    alt="pic1"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">Sarah Albert</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic3.jpg"
+                    alt="pic3"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">Jemy carline</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-down">
+                <div class="sapse-img-contant w-64 bg-white rounded-2xl">
+                  <img
+                    src="./image/bg-img/pic2.jpg"
+                    alt="pic2"
+                    class="group-hover:scale-110 duration-500 block w-full rounded-tr-2xl rounded-tl-2xl"
+                  />
+                  <div class="flex items-center justify-between p-4">
+                    <div class="sapase-cont">
+                      <h6 class="font-semibold text-fs18">
+                        <a href="javascript:void(0).;">John Doe</a>
+                      </h6>
+                      <span class="text-og-orangee">Senior Chef</span>
+                    </div>
+                    <div
+                      class="sher-icon w-10 h-10 flex justify-center items-center bg-og-orangee rounded-lg"
+                    >
+                      <img src="./image/icon/share.png" alt="sher-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-next h-12 w-12 rounded-full bg-prince-Prince text-white font-bold"
+            ></div>
+            <div
+              class="swiper-button-prev h-12 w-12 rounded-full bg-prince-Prince text-white font-bold"
+            ></div>
+          </div>
+
+          <div class="flex justify-around"></div>
+        </div>
+      </section>
+      <!-- Customer's Comment -->
+      <section class="pt-[100px]">
+        <div class="container mx-auto flex flex-wrap justify-center">
+          <div class="w-full text-center mb-12">
+            <span class="text-6xl bold font-Lobster mb-9"
+              >Customer's Comment
+            </span>
+          </div>
+          <div class="swiper comment pl-20">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="c-c flex justify-center">
+                  <div class="w-4/12">
+                    <div class="comment-img">
+                      <a href="#">
+                        <img
+                          class="rounded-xl"
+                          src="./image/pic1 (2).jpg"
+                          alt=""
+                          width="570px"
+                          height="100%"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="w-5/12">
+                    <div class="comment-content p-7">
+                      <p class="text-lg font-medium">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don't look even slightly believable. If you are going to
+                        use a passage of Lorem Ipsum, you need to be sure there
+                        isn't anything embarrassing hidden in the middle of
+                        text.
+                      </p>
+                      <div
+                        class="comment-footer mt-16 border-l-4 pl-3 border-prince-Prince"
+                      >
+                        <h3 class="text-2xl font-bold">Marn Kamk</h3>
+                        <span class="text-sm text-prince-Prince"
+                          >Food Expert</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-c flex justify-center">
+                  <div class="w-4/12">
+                    <div class="comment-img">
+                      <a href="#">
+                        <img
+                          class="rounded-xl"
+                          src="./image/pic3 (2).jpg"
+                          alt=""
+                          width="570px"
+                          height="100%"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="w-5/12">
+                    <div class="comment-content p-7">
+                      <p class="text-lg font-medium">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don't look even slightly believable. If you are going to
+                        use a passage of Lorem Ipsum, you need to be sure there
+                        isn't anything embarrassing hidden in the middle of
+                        text.
+                      </p>
+                      <div
+                        class="comment-footer mt-16 border-l-4 pl-3 border-prince-Prince"
+                      >
+                        <h3 class="text-2xl font-bold">Carry Mint</h3>
+                        <span class="text-sm text-prince-Prince"
+                          >Food Expert</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-c flex justify-center">
+                  <div class="w-4/12">
+                    <div class="comment-img">
+                      <a href="#">
+                        <img
+                          class="rounded-xl"
+                          src="./image/pic2 (2).jpg"
+                          alt=""
+                          width="570px"
+                          height="100%"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="w-5/12">
+                    <div class="comment-content p-7">
+                      <p class="text-lg font-medium">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don't look even slightly believable. If you are going to
+                        use a passage of Lorem Ipsum, you need to be sure there
+                        isn't anything embarrassing hidden in the middle of
+                        text.
+                      </p>
+                      <div
+                        class="comment-footer mt-16 border-l-4 pl-3 border-prince-Prince"
+                      >
+                        <h3 class="text-2xl font-bold">John Doe</h3>
+                        <span class="text-sm text-prince-Prince"
+                          >Food Expert</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-next h-12 w-12 rounded-full bg-prince-Prince text-white font-bold"
+            ></div>
+            <div
+              class="swiper-button-prev h-12 w-12 rounded-full bg-prince-Prince text-white font-bold"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Recent News & Updates -->
+      <section class="pt-[100px] pb-[70px]">
+        <div class="container mx-auto flex justify-center">
+          <div class="w-6/12">
+            <div class="w-full mb-4">
+              <div class="title">
+                <h1 class="font-Lobster text-black mb-5 text-6xl">
+                  Recent News & Updates
+                </h1>
+              </div>
+            </div>
+            <div class="w-full px-5 mb-8">
+              <div class="b-c flex rounded-r-2xl">
+                <div class="w-4/12">
+                  <div class="b-img overflow-hidden rounded-l-2xl">
+                    <a href="#">
+                      <img
+                        src="../image/blog-1.jpeg"
+                        alt=""
+                        width="100%"
+                        height="auto"
+                        class="scale-100 hover:scale-110 transition-all duration-500"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="w-8/12 py-6 px-8 rounded-r-2xl"
+                  style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+                >
+                  <div class="b-content">
+                    <ul class="flex mb-3">
+                      <li>
+                        <a href="#">
+                          <i
+                            class="fa-regular fa-calendar text-prince-Prince mr-1"
+                          ></i>
+                          <span class="text-sm"> 26 Jan 2023</span>
+                        </a>
+                      </li>
+                      <li class="ml-9">
+                        <a href="#">
+                          <i
+                            class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                          ></i>
+                          <span class="text-sm"> 2.5K</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <h5
+                      class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                    >
+                      Paradise Taste of Dishes
+                    </h5>
+                    <p class="mb-4">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have.
+                    </p>
+
+                    <div class="">
+                      <a href="./pages/bloglist.html">
+                        <span
+                          class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                          >Read More</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-5 mb-8">
+              <div class="b-c flex rounded-r-2xl">
+                <div class="w-4/12">
+                  <div class="b-img overflow-hidden rounded-l-2xl">
+                    <a href="#">
+                      <img
+                        src="../image/pic2 (1).jpg"
+                        alt=""
+                        width="100%"
+                        height="auto"
+                        class="scale-100 hover:scale-110 transition-all duration-500"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="w-8/12 py-6 px-8 rounded-r-2xl"
+                  style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+                >
+                  <div class="b-content">
+                    <ul class="flex mb-3">
+                      <li>
+                        <a href="#">
+                          <i
+                            class="fa-regular fa-calendar text-prince-Prince mr-1"
+                          ></i>
+                          <span class="text-sm"> 15 Feb 2023</span>
+                        </a>
+                      </li>
+                      <li class="ml-9">
+                        <a href="#">
+                          <i
+                            class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                          ></i>
+                          <span class="text-sm"> 1.5K</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <h5
+                      class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                    >
+                      Taste of Paradise Dishes
+                    </h5>
+                    <p class="mb-4">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have.
+                    </p>
+
+                    <div class="">
+                      <a href="./pages/bloglist.html">
+                        <span
+                          class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                          >Read More</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-4/12 ml-4 h-[600px] overflow-hidden rounded-2xl">
+            <div class="video">
+              <video loop muted autoplay>
+                <source
+                  src="./image/7008562-hd_1080_1920_25fps.mp4"
+                  type="video/mp4"
+                  class="h-52 w-full"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container bg-bgfoot py-[45px] w-11/12 mx-auto rounded-2xl">
+        <div class="mx-12 px-[15px]">
+          <div
+            class="flex justify-around lg:mb-[60px] sm:mb-[40px] sm:pb-[40px] pb-[30px] mb-[30px] border-b border-[#ffffff1a]"
+          >
+            <div class="footer-logo lg:w-4/12 px-[15px]">
+              <a href="javascript:void(0).;">
+                <img
+                  src="./image/icon/logo2.png"
+                  alt="logo2"
+                  class="pb-[15px]"
+                />
+              </a>
+              <p class="text-white text-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <div class="lg:w-6/12 sub-cont px-[15px]">
+              <h4 class="text-white mb-[15px] text-2xl font-semibold">
+                Subscribe To Our Newsletter
+              </h4>
+              <form action="">
+                <input
+                  type="text"
+                  class="w-full lg:h-[65px] rounded-lg py-[10px] px-5 outline-none relative"
+                  placeholder="Enter your Email"
+                />
+                <a href="javascript:void(0).;">
+                  <span
+                    class="bg-og-orangee py-[10px] px-3 rounded-lg text-white font-medium border border-prince-Prince transition-all duration-500 absolute hover:bg-transparent hover:text-prince-Prince translate-x-[-110%] translate-y-[10px]"
+                    >Subscribe</span
+                  >
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-contant flex mx-auto px-[50px] w-full">
+          <div class="xl:w-3/12 lg:w-2/12 sm:w-6/12 w-full px-[15px]">
+            <h5
+              class="footer-titel mb-[30px] uppercase text-white text-2xl font-semibold hover:text-prince-Prince transition-all duration-500"
+            >
+              <a href="./pages/contact.html"> Contact </a>
+            </h5>
+            <ul class="w-full">
+              <li class="flex w-full items-center justify-between mb-3">
+                <i
+                  class="fa-solid fa-location-dot text-og-orangee text-3xl"
+                ></i>
+                <p
+                  class="text-base inline-block ml-6 leading-5 text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                >
+                  <a href="https://maps.app.goo.gl/iUcfpe2yCmKYiccT6">
+                    1247/Plot No. 39, 15th Phase, Colony, Kkatpally, Hyderabad
+                  </a>
+                </p>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <i class="fa-solid fa-phone text-og-orangee text-3xl"></i>
+                <p
+                  class="text-base inline-block ml-3 leading-6 text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                >
+                  <a href="./pages/contact.html">
+                    +91 987-654-3210 <br />
+                    +91 123-456-7890
+                  </a>
+                </p>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <i class="fa-solid fa-envelope text-og-orangee text-3xl"></i>
+                <p
+                  class="text-base inline-block ml-3 leading-6 text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                >
+                  <a href="https://mail.google.com/">
+                    info@example.com <br />
+                    info@example.com
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- OUR LINKS -->
+          <div class="xl:w-3/12 lg:w-2/12 sm:w-6/12 w-full px-[15px]">
+            <h5
+              class="footer-titel mb-[30px] uppercase text-white text-2xl font-semibold hover:text-prince-Prince transition-all duration-500"
+            >
+              <a href="./pages/blog-list.html"> OUR LINKS </a>
+            </h5>
+            <ul class="w-full leading-6">
+              <li class="flex w-full items-center justify-between mb-3">
+                <a href="./index.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Home</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/about.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >About Us</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/services.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Services</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/bloglist.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Team</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/blog-list.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Blog</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- OUR SERVICES -->
+          <div class="xl:w-3/12 lg:w-2/12 sm:w-6/12 w-full px-[15px]">
+            <h5
+              class="footer-titel mb-[30px] uppercase text-white text-2xl font-semibold hover:text-prince-Prince transition-all duration-500"
+            >
+              <a href="./pages/contact.html"> OUR SERVICES </a>
+            </h5>
+            <ul class="w-full leading-8">
+              <li class="flex w-full items-center justify-between mb-3">
+                <a href="./pages/about.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Strategy & Research</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/blog-list.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Fast Delivery</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/bloglist.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Seat Reservation</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/contact.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Pickup In Store</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/services.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Our Menu</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- HELP CENTER -->
+          <div class="xl:w-3/12 lg:w-2/12 sm:w-6/12 w-full px-[15px]">
+            <h5
+              class="footer-titel mb-[30px] uppercase text-white text-2xl font-semibold hover:text-prince-Prince transition-all duration-500"
+            >
+              <a href="./pages/services.html"> HELP CENTER </a>
+            </h5>
+            <ul class="w-full leading-8">
+              <li class="flex w-full items-center justify-between mb-3">
+                <a href="./pages/about.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >FAQ</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/bloglist.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Shop</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/contact.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Category Filter</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/services.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Testimonials</span
+                  >
+                </a>
+              </li>
+              <li class="w-full items-center justify-between mb-3">
+                <a href="./pages/blog-list.html">
+                  <span
+                    class="text-base inline-block text-[#CCCCCC] hover:text-prince-Prince transition-all duration-500"
+                    >Contact Us</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container foot-bottom mx-auto px-44">
+        <div
+          class="foot-content py-5 flex"
+          style="border-top: 0.5px solid #999999"
+        >
+          <div class="w-6/12">
+            <p class="text-[#999999]">
+              <a href="#"> Copyright 2023 All rights reserved. </a>
+            </p>
+          </div>
+          <div class="w-6/12 flex justify-end">
+            <p class="text-[#999999]">
+              <a href="#">
+                Crafted With<i class="fa-solid fa-heart px-3"></i>by
+                <span class="text-prince-Prince">DexignZone</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script src="jquery/script.js"></script>
+    <!-- card -->
+    <script>
+      var swiper = new Swiper(".card_c", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: true,
+        },
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- commit -->
+    <script>
+      var swiper = new Swiper(".comment", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: true,
+        },
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- card -->
+    <script>
+      var swiper = new Swiper(".cardc", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- banner -->
+    <script>
+      var swiper1 = new Swiper(".mySwiper", {
+        direction: "vertical",
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+      });
+    </script>
+    <!-- loder -->
+    <script>
+      $(window).on("load", function () {
+        $(".loader").delay(3000).fadeOut("fast");
+      });
+    </script>
+    <!-- cursor -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

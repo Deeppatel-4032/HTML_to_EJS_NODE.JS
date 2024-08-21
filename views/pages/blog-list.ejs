@@ -1,0 +1,870 @@
+<%-include("../head.ejs")%>
+  <body class="font-Poppins">
+    <!-- cursor -->
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+    <!-- loader -->
+    <!-- <div id="loading-area" class="loading-page-3">
+      <img src="../image/loading.gif" alt="loader" />
+    </div> -->
+    <!-- header -->
+    <header class="py-6 absolute w-full top-0 left-0 z-[99999]">
+      <div class="container mx-auto flex">
+        <div class="w-1/6">
+          <a href="./about">
+            <img src="../image/logo2.png" alt="" />
+          </a>
+        </div>
+        <div class="w-full flex justify-end items-center">
+          <ul class="flex">
+            <li class="px-3">
+              <a href="../index" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Home</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./services">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Services</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./about" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >About Us</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./blog-list" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Blogs</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./bloglist" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Blog List</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./contact" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Contact Us</span
+                >
+              </a>
+            </li>
+          </ul>
+          <ul class="pl-16 flex">
+            <li
+              class="w-11 h-11 mx-3 rounded-lg bg-white flex justify-center items-center"
+            >
+              <a href="#">
+                <i class="fi fi-rr-user-pen text-black text-xl"></i>
+              </a>
+            </li>
+            <li
+              class="w-11 h-11 rounded-lg flex bg-white justify-center items-center"
+            >
+              <a href="#">
+                <i class="fi fi-rr-shopping-bag text-black text-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Today's Special -->
+      <section>
+        <div
+          class="relative z-50 mx-auto pt-24 pb-20 after:content-[''] after:absolute after:-z-50 after:bg-backd-back after:opacity-60 after:rounded-3xl after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-sm"
+          style="background-image: url('../image/pic1\ \(1\).png'); width: 100%"
+        >
+          <div class="w-full flex justify-center mb-12 z-50 pt-20">
+            <div class="title text-center">
+              <h1 class="text-7xl font-Lobster text-white mb-5">Blog List</h1>
+              <button
+                class="bg-prince-Prince px-8 py-3 rounded-lg border border-prince-Prince text-white mt-5 hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+              >
+                <a href="#">
+                  <span class="mr-2">Home</span>
+                  <span
+                    ><i class="fa-solid fa-angle-right pr-2 text-sm"></i
+                  ></span>
+                  <span>Blog List</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blog-list-card -->
+      <section class="py-24 flex">
+        <div class="container mx-auto flex flex-wrap gap-y-6">
+          <div class="w-6/12 px-5">
+            <div class="b-c flex rounded-r-2xl">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/blog-1.jpeg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 26 Jan 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 2.5K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    Paradise Taste of Dishes
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 px-5">
+            <div class="b-c flex rounded-r-2xl">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/pic2 (1).jpg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 15 Feb 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 1.5K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    Taste of Paradise Dishes
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 px-5">
+            <div class="b-c flex rounded-r-2xl">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/pic3 (1).jpg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 13 Jan 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 2.9K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    The Fork & Knife
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 px-5">
+            <div class="b-c flex rounded-r-2xl">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/pic4 (1).jpg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 13 jun 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 3.4K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    Flavors Of The World
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 px-5">
+            <div class="b-c flex rounded-r-2xl">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/pic5.jpg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 20 Aug 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 2.5K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    Tabletop Treats Cheese
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 px-5">
+            <div class="b-c flex">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/pic6.jpg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 26 Jan 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 2.5K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    Palate Pleaser Dishes
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 px-5">
+            <div class="b-c flex rounded-r-2xl">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/pic7.jpg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 29 Nov 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 2.5K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    Paradise Taste of Dishes
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border border-prince-Prince py-[10px] inline-block px-3 rounded-lg text-white font-medium hover:bg-transparent hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-6/12 px-5">
+            <div class="b-c flex rounded-r-2xl">
+              <div class="w-4/12">
+                <div class="b-img overflow-hidden rounded-l-2xl">
+                  <a href="#">
+                    <img
+                      src="../image/pic8.jpg"
+                      alt=""
+                      width="100%"
+                      height="auto"
+                      class="scale-100 hover:scale-110 transition-all duration-500"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-8/12 py-6 px-8 rounded-r-2xl"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+              >
+                <div class="b-content">
+                  <ul class="flex mb-3">
+                    <li>
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-calendar text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 26 Jan 2023</span>
+                      </a>
+                    </li>
+                    <li class="ml-9">
+                      <a href="#">
+                        <i
+                          class="fa-regular fa-comment-dots text-prince-Prince mr-1"
+                        ></i>
+                        <span class="text-sm"> 2.5K</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <h5
+                    class="text-xl font-semibold mb-3 hover:text-prince-Prince transition-all duration-500"
+                  >
+                    Paradise Taste of Dishes
+                  </h5>
+                  <p class="mb-4">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have.
+                  </p>
+
+                  <div class="">
+                    <a href="javascript:void(0).;">
+                      <span
+                        class="bg-og-orangee border py-[10px] inline-block px-3 rounded-lg font-medium hover:bg-transparent border-prince-Prince text-white hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+                        >Read More</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div
+        class="bg-bgfoot pt-[85px] w-full relative overflow-hidden z-[99999]"
+      >
+        <div class="foot-img">
+          <img
+            src="../image/foot.png"
+            alt=""
+            class="absolute -bottom-20 z-10 -left-6"
+          />
+          <img src="../image/pic6 (1).png" alt="" class="absolute right-0" />
+        </div>
+        <div
+          class="footer-contant pb-[45px] flex mx-auto px-[50px] w-full justify-evenly z-50"
+        >
+          <div class="w-2/12 px-5">
+            <div class="contact">
+              <div class="title mb-7">
+                <h2
+                  class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+                >
+                  CONTACT
+                </h2>
+              </div>
+              <ul>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-location-dot text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div class="footer-c-content">
+                      <p
+                        class="text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                      >
+                        1247/Plot No. 39, 15th Phase, Colony, Kkatpally,
+                        Hyderabad
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-phone text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div
+                      class="footer-c-content text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                    >
+                      <h5>+91 987-654-3210</h5>
+                      <h5>+91 123-456-7890</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-envelope text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div
+                      class="footer-c-content text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                    >
+                      <h5>info@example.com</h5>
+                      <h5>info@example.com</h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                OUR LINKS
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Pages</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>About us</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                OUR SERVICES
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Strategy & Research</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Fast Delivery</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Seat Reservation</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Pickup In Store</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Our Menu</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                HELP CENTER
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>FAQ</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Shop</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Category Filter</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Testimonials</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-bgfoot foot-bottom mx-auto px-44">
+          <div
+            class="foot-content py-5 flex"
+            style="border-top: 0.5px solid #999999"
+          >
+            <div class="w-6/12">
+              <p class="text-[#999999]">Copyright 2023 All rights reserved.</p>
+            </div>
+            <div class="w-6/12 flex justify-end">
+              <p class="text-[#999999]">
+                Crafted With<i class="fa-solid fa-heart px-3"></i>by
+                <span class="text-prince-Prince">DexignZone</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- loder -->
+    <script>
+      $(window).on("load", function () {
+        $("#loading-area").delay(2000).fadeOut("fast");
+      });
+    </script>
+    <!-- cursor -->
+    <script src="../jquery/script.js"></script>
+  </body>
+</html>

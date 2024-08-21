@@ -1,0 +1,506 @@
+<%-include("../head.ejs")%>
+  <body class="font-Poppins">
+    <!-- cursor -->
+    <div id="cursor"></div>
+    <div id="stalker"></div>
+    <!-- loader -->
+    <!-- <div id="loading-area" class="loading-page-3">
+      <img src="../image/loading.gif" alt="loader" />
+    </div> -->
+    <!-- header -->
+    <header class="py-6 absolute w-full top-0 left-0 z-[99999]">
+      <div class="container mx-auto flex">
+        <div class="w-1/6">
+          <a href="./about">
+            <img src="../image/logo2.png" alt="" />
+          </a>
+        </div>
+        <div class="w-full flex justify-end items-center">
+          <ul class="flex">
+            <li class="px-3">
+              <a href="../index" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Home</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./services">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Services</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./about" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >About Us</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./blog-list" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Blogs</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./bloglist" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Blog List</span
+                >
+              </a>
+            </li>
+            <li class="px-3">
+              <a href="./contact" target="_blank">
+                <span
+                  class="text-white hover:text-prince-Prince transition-all duration-500"
+                  >Contact Us</span
+                >
+              </a>
+            </li>
+          </ul>
+          <ul class="pl-16 flex">
+            <li
+              class="w-11 h-11 mx-3 rounded-lg bg-white flex justify-center items-center"
+            >
+              <a href="#">
+                <i class="fi fi-rr-user-pen text-black text-xl"></i>
+              </a>
+            </li>
+            <li
+              class="w-11 h-11 rounded-lg flex bg-white justify-center items-center"
+            >
+              <a href="#">
+                <i class="fi fi-rr-shopping-bag text-black text-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Today's Special -->
+    <section>
+      <div
+        class="relative z-50 mx-auto pt-24 pb-20 after:content-[''] after:absolute after:-z-50 after:bg-backd-back after:opacity-60 after:rounded-3xl after:w-full after:h-full after:top-0 after:left-0 after:backdrop-blur-sm"
+        style="background-image: url('../image/pic1\ \(1\).png'); width: 100%"
+      >
+        <div class="w-full flex justify-center mb-12 z-50 pt-20">
+          <div class="title text-center">
+            <h1 class="text-7xl font-Lobster text-white">About Us</h1>
+            <button
+              class="bg-prince-Prince px-8 py-3 rounded-lg border border-prince-Prince text-white mt-5 hover:text-prince-Prince hover:border-og-orangee hover:bg-white hover:border transition-all duration-500"
+            >
+              <a href="#">
+                <span class="mr-2">Home</span>
+                <span
+                  ><i class="fa-solid fa-angle-right pr-2 text-sm"></i
+                ></span>
+                <span>About Us</span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Restaurant -->
+    <section class="py-24">
+      <div class="container mx-auto">
+        <div class="w-full flex justify-center mb-12">
+          <div class="title">
+            <h1 class="text-6xl mb-3 font-Lobster text-center">
+              We Invite you to Visit Our Restaurant
+            </h1>
+            <p class="mx-auto w-6/12 text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+        <div class="w-full flex justify-center relative">
+          <a href="#" class="">
+            <img src="../image/pic11.jpg" alt="" class="rounded-xl" />
+            <button
+              class="w-20 h-20 rounded-full bg-prince-Prince absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 scale-100 hover:scale-125 transition-all duration-500"
+            >
+              <a href="https://www.youtube.com/watch?v=XJb1G9iRoL4">
+                <i class="fa-solid fa-caret-right text-white text-4xl"></i>
+              </a>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- What We Do -->
+    <section class="pb-[70px]">
+      <div class="container mx-auto">
+        <div class="w-full flex justify-center mb-12">
+          <div class="title">
+            <h1 class="text-6xl my-3 font-Lobster text-center">What We Do</h1>
+          </div>
+        </div>
+        <div class="about-card flex">
+          <div class="w-3/12 px-3 mb-8">
+            <div
+              class="about-wrapper py-8 px-3 bg-second-scolor rounded-xl mx-auto flex flex-col justify-center border-2 border-second-scolor hover:bg-white hover:border-prince-Prince duration-500 transition-all scale-100 hover:scale-105"
+            >
+              <div class="btn-icon flex justify-center mb-5">
+                <div
+                  class="icon-bx w-24 h-24 bg-prince-Prince rounded-full flex justify-center items-center"
+                >
+                  <img src="../image/vegetable.png" alt="" class="w-12 h-12" />
+                </div>
+              </div>
+              <div class="icon-content text-center">
+                <h3 class="mb-2">
+                  <a href="#" class="text-xl font-semibold">Fresh Products</a>
+                </h3>
+                <p class="text-sm text-stext-scolor">
+                  Lorem Ipsum is simply dummy text of the printing and
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-3/12 px-3 mb-8">
+            <div
+              class="about-wrapper py-8 px-3 bg-second-scolor rounded-xl mx-auto flex flex-col justify-center border-2 border-second-scolor hover:bg-white hover:border-prince-Prince duration-500 transition-all scale-100 hover:scale-105"
+            >
+              <div class="btn-icon flex justify-center mb-5">
+                <div
+                  class="icon-bx w-24 h-24 bg-prince-Prince rounded-full flex justify-center items-center"
+                >
+                  <img src="../image/chef-hat.png" alt="" class="w-12 h-12" />
+                </div>
+              </div>
+              <div class="icon-content text-center">
+                <h3 class="mb-2">
+                  <a href="#" class="text-xl font-semibold">Skilled Chefs</a>
+                </h3>
+                <p class="text-sm text-stext-scolor">
+                  Lorem Ipsum is simply dummy text of the printing and
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-3/12 px-3 mb-8">
+            <div
+              class="about-wrapper py-8 px-3 bg-second-scolor rounded-xl mx-auto flex flex-col justify-center border-2 border-second-scolor hover:bg-white hover:border-prince-Prince duration-500 transition-all scale-100 hover:scale-105"
+            >
+              <div class="btn-icon flex justify-center mb-5">
+                <div
+                  class="icon-bx w-24 h-24 bg-prince-Prince rounded-full flex justify-center items-center"
+                >
+                  <img src="../image/cocktail.png" alt="" class="w-12 h-12" />
+                </div>
+              </div>
+              <div class="icon-content text-center">
+                <h3 class="mb-2">
+                  <a href="#" class="text-xl font-semibold">Best Bar</a>
+                </h3>
+                <p class="text-sm text-stext-scolor">
+                  Lorem Ipsum is simply dummy text of the printing and
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-3/12 px-3 mb-8">
+            <div
+              class="about-wrapper py-8 px-3 bg-second-scolor rounded-xl mx-auto flex flex-col justify-center border-2 border-second-scolor hover:bg-white hover:border-prince-Prince duration-500 transition-all scale-100 hover:scale-105"
+            >
+              <div class="btn-icon flex justify-center mb-5">
+                <div
+                  class="icon-bx w-24 h-24 bg-prince-Prince rounded-full flex justify-center items-center"
+                >
+                  <img src="../image/cuisine.png" alt="" class="w-12 h-12" />
+                </div>
+              </div>
+              <div class="icon-content text-center">
+                <h3 class="mb-2">
+                  <a href="#" class="text-xl font-semibold">Vegan Cuisine</a>
+                </h3>
+                <p class="text-sm text-stext-scolor">
+                  Lorem Ipsum is simply dummy text of the printing and
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div
+        class="bg-bgfoot pt-[85px] w-full relative overflow-hidden z-[99999]"
+      >
+        <div class="foot-img">
+          <img
+            src="../image/foot.png"
+            alt=""
+            class="absolute -bottom-20 z-10 -left-6"
+          />
+          <img src="../image/pic6 (1).png" alt="" class="absolute right-0" />
+        </div>
+        <div
+          class="footer-contant pb-[45px] flex mx-auto px-[50px] w-full justify-evenly z-50"
+        >
+          <div class="w-2/12 px-5">
+            <div class="contact">
+              <div class="title mb-7">
+                <h2
+                  class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+                >
+                  CONTACT
+                </h2>
+              </div>
+              <ul>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-location-dot text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div class="footer-c-content">
+                      <p
+                        class="text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                      >
+                        1247/Plot No. 39, 15th Phase, Colony, Kkatpally,
+                        Hyderabad
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-phone text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div
+                      class="footer-c-content text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                    >
+                      <h5>+91 987-654-3210</h5>
+                      <h5>+91 123-456-7890</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-5">
+                  <a href="#" class="flex">
+                    <div class="footer-icon pr-6">
+                      <i
+                        class="fa-solid fa-envelope text-3xl text-prince-Prince"
+                      ></i>
+                    </div>
+                    <div
+                      class="footer-c-content text-base text-[#cccccc] hover:text-prince-Prince transition-all duration-500"
+                    >
+                      <h5>info@example.com</h5>
+                      <h5>info@example.com</h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                OUR LINKS
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Pages</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>About us</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                OUR SERVICES
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Strategy & Research</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Fast Delivery</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Seat Reservation</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Pickup In Store</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Our Menu</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-2/12 px-5">
+            <div class="title mb-7">
+              <h2
+                class="text-2xl font-semibold text-white hover:text-prince-Prince transition-all duration-500"
+              >
+                HELP CENTER
+              </h2>
+            </div>
+            <div class="our">
+              <ul>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>FAQ</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Shop</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Category Filter</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Testimonials</span>
+                  </a>
+                </li>
+                <li class="my-4">
+                  <a
+                    href="#"
+                    class="text-[#cccccc] hover:text-prince-Prince transition-all duration-500 text-base"
+                  >
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-bgfoot foot-bottom mx-auto px-44">
+          <div
+            class="foot-content py-5 flex"
+            style="border-top: 0.5px solid #999999"
+          >
+            <div class="w-6/12">
+              <p class="text-[#999999]">Copyright 2023 All rights reserved.</p>
+            </div>
+            <div class="w-6/12 flex justify-end">
+              <p class="text-[#999999]">
+                Crafted With<i class="fa-solid fa-heart px-3"></i>by
+                <span class="text-prince-Prince">DexignZone</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../jquery/script.js"></script>
+    <!-- loder -->
+    <script>
+      $(window).on("load", function () {
+        $("#loading-area").delay(2000).fadeOut("fast");
+      });
+    </script>
+  </body>
+</html>
